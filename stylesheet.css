@@ -1,0 +1,20 @@
+body {
+    margin:auto;
+    background-image:url(background.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+h2 {
+    font-family: monospace;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h6 {
+    font-family: monospace;
+    margin-bottom: 20px;
+}
