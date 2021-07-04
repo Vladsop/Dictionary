@@ -13,17 +13,18 @@
 <body>
     <div class="container">
         <h2>Dictionary</h2>
-        <h6 id="message">
-            </h5>
-            <button class="btn btn-secondary" id = "emptyDictionary" onclick="printMessage(empty());">Empty Dictionary</button>
-            <div class="input-group flex-nowrap" id = wordAddDiv style="margin-top: 40px; margin-bottom: 40px; width: 50%;">
-                <input type="text" class="form-control" width=10px placeholder="Please enter a word to add it to the dictionary!" id="wordAddInput">
-                <button class="btn btn-info" id = "addWord" type="button" onclick="printMessage(addWord());">Add Word</button>
-            </div>
-            <div class="input-group flex-nowrap" id = wordSearchDiv style="margin-top: 40px; margin-bottom: 40px; width: 50%; ">
-                <input type="text" class="form-control" width=10px placeholder="Please enter a word to search for it in the dictionary!" id="wordSearchInput">
-                <button class="btn btn-success" id = "searchWord" type="button" onclick="printMessage(searchWord());">Search Word</button>
-            </div>
+        <h6 id="message"></h6>
+        <div class="input-group flex-nowrap" id=wordAddDiv style="margin-top: 40px; margin-bottom: 40px; width: auto;">
+            <input type="text" class="form-control" width=10px placeholder="Please enter a word to add it to the dictionary!" id="wordAddInput">
+            <button class="btn btn-info" id="addWord" type="button" onclick="printMessage(addWord());">Add Word</button>
+        </div>
+        <div class="input-group flex-nowrap" id=wordSearchDiv style="margin-top: 40px; margin-bottom: 40px; width: auto; ">
+            <input type="text" class="form-control" width=10px placeholder="Please enter a word to search for it in the dictionary!" id="wordSearchInput">
+            <button class="btn btn-success" id="searchWord" type="button" onclick="printMessage(searchWord());">Search Word</button>
+        </div>
+        <button class="btn btn-success" id="listDictionary" onclick="listDictionary();">List Dictionary</button>
+        <button class="btn btn-secondary" id="emptyDictionary" onclick="printMessage(empty());">Empty Dictionary</button>
+        <h6 id="dictionaryWords"></h6>
     </div>
 
     <!--JQuery and Bootstrap Bundle with Popper -->
